@@ -1,0 +1,19 @@
+.navbar-brand {
+    font-size: 3em;
+}
+ .navbar-right > li {
+     font-weight: bold;
+ }
+ #sidebar, #article {
+     background-color: #777;
+     color: #ffffff;
+     height: 500px;
+     text-align: center;
+     line-height: 13.1;
+ }
+.navbar {
+    margin-bottom: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 13.1;
+}
