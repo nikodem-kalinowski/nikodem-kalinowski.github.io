@@ -9,11 +9,18 @@
      color: #ffffff;
      height: 500px;
      text-align: center;
-     line-height: 13.1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
  }
 .navbar {
     margin-bottom: 0;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    line-height: 13.1;
+h1 .content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-header {
+    text-align: center;
 }
