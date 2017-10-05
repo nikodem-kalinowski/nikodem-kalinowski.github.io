@@ -1,5 +1,6 @@
 .navbar-brand {
     font-size: 3em;
+    font-family: 'Noto Serif', serif;
 }
  .navbar-right > li {
      font-weight: bold;
