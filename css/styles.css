@@ -1,23 +1,42 @@
-h1.hero-text {
-    margin-top: 1em;
-    margin-left: 5em;
-    font-family: 'Noto Serif', serif;
-    color: aliceblue;
-    display: block;
-    line-height: 1.2;
-    font-size: 5.7rem;
-    position: absolute;
+@media only screen and (min-width: 1100px) {
+    h1.hero-text {
+        margin-top: 1em;
+        margin-left: 4em;
+        font-family: 'Noto Serif', serif;
+        color: aliceblue;
+        display: block;
+        line-height: 1.2;
+        font-size: 5.7rem;
+        position: absolute;
 
+    }
+
+    h2.hero-text {
+        margin-top: 12em;
+        margin-left: 5em;
+        font-family: 'Noto Serif', serif;
+        color: aliceblue;
+        display: block;
+        line-height: 1.2;
+        font-size: 4rem;
+        position: absolute;
+    }
+
+    a, a:hover, a:active {
+        color: aliceblue;
+    }
 }
 
 .img-responsive {
     width: 100%;
     height: 100vh;
 }
-@media only screen and (max-width: 1024px) {
-#hero-img{
-    height: 100vh;
-}
+
+@media only screen and (max-width: 1099px) {
+    #hero-img {
+        height: 100vh;
+    }
+
     h1.hero-text {
         margin-top: 2em;
         margin-left: 3em;
@@ -25,7 +44,54 @@ h1.hero-text {
         color: aliceblue;
         display: block;
         line-height: 1.2;
-        font-size: 3.7rem;
+        font-size: 4.6rem;
         position: absolute;
     }
+    h2.hero-text {
+        margin-top: 12em;
+        margin-left: 5em;
+        font-family: 'Noto Serif', serif;
+        color: aliceblue;
+        display: block;
+        line-height: 1.2;
+        font-size: 4rem;
+        position: absolute;
+    }
+
+    a, a:hover, a:active {
+        color: aliceblue;
+    }
 }
+
+@media only screen and (max-width: 800px) {
+    #hero-img {
+        height: 100vh;
+    }
+
+    h1.hero-text {
+        margin-top: 3em;
+        margin-left: 3em;
+        font-family: 'Noto Serif', serif;
+        color: aliceblue;
+        display: block;
+        line-height: 1.2;
+        font-size: 3.4rem;
+        position: absolute;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #hero-img {
+            height: 100vh;
+        }
+
+        h1.hero-text {
+            margin-top: 2em;
+            margin-left: 3em;
+            font-family: 'Noto Serif', serif;
+            color: aliceblue;
+            display: block;
+            line-height: 1.2;
+            font-size: 2.3rem;
+            position: absolute;
+        }
+    }
