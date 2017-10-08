@@ -1,7 +1,6 @@
 #hero{
     background: url("https://static.pexels.com/photos/34153/pexels-photo.jpg") center;
     background-size: cover;
-    font-size: 3.5rem;
     color: aliceblue;
     font-family: 'Noto Serif', serif;
 
@@ -51,7 +50,7 @@ li > a:hover:before {
     align-self: center;
     margin-left: 10%;
 }
-#myProjects, #contactMe {
+#myProjects, #contactMe, #aboutMe {
     color: black;
     flex-wrap: wrap;
     height: 50vh;
@@ -60,19 +59,13 @@ li > a:hover:before {
 #contactMeButton {
     text-align: center;
 }
-.btn {
+.btn, #hero, #aboutMe {
     font-size: 3.5rem;
 }
-#contactMe {
-    align-items: center;
-}
-#aboutMe{
+#aboutMe, #footer{
     background-color: #eeeeee;
-    height: 50vh;
-    font-size: 3.5rem;
 }
 #footer {
-    background-color: #eeeeee;
     height: 10vh;
     align-items: center;
     justify-content: center;
@@ -82,7 +75,6 @@ html {
     font-family: 'Noto Serif', serif;
 
 }
-
 @media (max-width: 575px) {
     html {
         font-size: 16px;
