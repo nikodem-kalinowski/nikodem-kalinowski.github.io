@@ -75,7 +75,7 @@ html {
     font-family: 'Noto Serif', serif;
 
 }
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     html {
         font-size: 16px;
     }
@@ -84,6 +84,23 @@ html {
     }
     #hero, #aboutMe, #contactMeButton, .btn{
         font-size: 1.4rem;
+    }
+    #myNav{
+        margin-top: 3.5em;
+    }
+    #heading {
+        margin-top: 1em;
+    }
+}
+@media (min-width: 577px) and (max-width: 769px) {
+    html  {
+        font-size: 16px;
+    }
+    #myProjects{
+        height: 100vh;
+    }
+    #hero, #aboutMe, #contactMeButton, .btn{
+        font-size: 2.4rem;
     }
     #myNav{
         margin-top: 3.5em;
