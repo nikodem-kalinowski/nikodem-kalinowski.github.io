@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-<div id="hero-section">
-    <div class="fluid-container">
-        <div class="hero-content">
-            <h1 class="hero-text">
-                <span><b> Hello, I'm Nikodem. <br> I'm beginner web developer.</b></span>
-            </h1>
-
-            <h2 class="hero-text">
-                <ul>
-                    <li><a class="hero-text" href="">About me</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </h2>
-            <img src="https://static.pexels.com/photos/34153/pexels-photo.jpg" class="img-responsive" id="hero-img" alt="">
+<div class="fluid-container" id="hero">
+    <div class="row" id="myHero">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 myText" id="heading"> Hello, I'm Nikodem.<br> I'm web developer.</div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 myText" id="myNav">
+            <ul>
+                <li><a href="">Projects</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </div>
     </div>
 </div>
+<div class="container" >
+    <div class="row" id="myProjects">
+        <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-6">
+            <div class="firstProject"><img
+                    src="img/logo_400x100_nobg.png" class="img-fluid"/></div>
+        </div>
+        <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-6"><img src="img/GuestAllocatorLogo.png" class="img-fluid"/></div>
+    </div>
+</div>
+<div class="fluid-container" id="aboutMe">
+    <div class="row" >
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 myText" id="heading"> About me</div>
 
+    </div>
 
-<script src="jQuery/jquery-3.2.1.js"></script>
-<script src="jQuery/bootstrap.min.js"></script>
+</div>
+<div class="container" >
+    <div class="row" id="contactMe" >
+        <div class="col-xl-12 myText" id="contactMeButton">
+            <button type="button" class="btn btn-warning flex-item">Contact Me</button> </div>
+
+    </div>
+
+</div>
+<div class="fluid-container">
+    <div class="row" id="footer">
+        This is footer
+    </div>
+
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/jQuery/jquery-3.2.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="/jQuery/bootstrap.min.js"></script>
 </body>
 </html>
