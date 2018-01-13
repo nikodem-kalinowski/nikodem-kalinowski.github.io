@@ -1,10 +1,10 @@
-**Nikodem Kalinowski - portfolio **
+## Nikodem Kalinowski - portfolio ##
 
-This project will be helpful tool for locating guests in medium sized holiday resorts. 
+This project is my first assignment which I got during infoShare Academy course. 
 
-Defining size of the rooms and locate guests accordingly will be major advantage.
+Main goal is to create my first website as my on-line card.
 
-Also it will allow to print designed blueprint into A4 sheet of paper.
+This card shows other projects that I have worked on during course and presentation of what I have learned.
 
 
-[Guests Locater](https://nikodem-kalinowski.github.io)
+[Project](https://nikodem-kalinowski.github.io)
