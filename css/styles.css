@@ -50,7 +50,7 @@ li > a:hover:before {
 .myText {
     flex-basis: auto;
 }
-#heading, #aboutMe, #contactMeButton {
+#heading, #aboutMe, #contactMeButton, #myProjects, .project {
     text-align: center;
 }
 #myNav {
@@ -60,20 +60,21 @@ li > a:hover:before {
 #myProjects, #contactMe {
     color: black;
     flex-wrap: wrap;
-    height: 50vh;
+    height: 100vh;
     align-items: center;
 }
 .btn, #hero, #aboutMe {
     font-size: 3.5rem;
 }
-#aboutMe, #footer{
+#aboutMe, #contactMe{
     background-color: #eeeeee;
 }
-
+#footer{
+    background-color: #373737;
+}
 html {
     font-size: 14px;
     font-family: 'Noto Serif', serif;
-
 }
 @media (max-width: 576px) {
     html {
@@ -95,7 +96,7 @@ html {
         max-width: 540px;
     }
     .content_text {
-        font-size: 1.6rem;
+        font-size: 1rem;
         line-height: 1.4em;
     }
 }
@@ -119,7 +120,7 @@ html {
         max-width: 720px;
     }
     .content_text {
-        font-size: 1.6rem;
+        font-size: 1.0rem;
         line-height: 1.4em;
     }
 }
@@ -128,6 +129,10 @@ html {
     .container {
         max-width: 960px;
     }
+    .content_text {
+        font-size: 1.2rem;
+        line-height: 1.0em;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -135,7 +140,7 @@ html {
         max-width: 1140px;
     }
     .content_text {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         line-height: 1.4em;
     }
 }
@@ -152,11 +157,36 @@ html {
     margin-left: -15px;
 }
 .content_text {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.8em;
     text-align: center;
     color: #454545;
 }
 .social_links {
     font-size: 2.5em;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+.overlay_text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container:hover .overlay {
+    opacity: 1;
 }
