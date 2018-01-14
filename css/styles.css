@@ -3,15 +3,22 @@
     background-size: cover;
     color: aliceblue;
     font-family: 'Noto Serif', serif;
-
-}
-.row{
-    margin-left: 0;
-    margin-right: 0;
 }
 #myHero, #aboutMe{
     height:100vh;
 }
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
 li > a:hover,  li > a, ul.myNav > li {
     text-decoration: none;
     color: aliceblue;
@@ -43,21 +50,18 @@ li > a:hover:before {
 .myText {
     flex-basis: auto;
 }
-#heading {
+#heading, #aboutMe, #contactMeButton {
     text-align: center;
 }
 #myNav {
     align-self: center;
     margin-left: 10%;
 }
-#myProjects, #contactMe, #aboutMe {
+#myProjects, #contactMe {
     color: black;
     flex-wrap: wrap;
     height: 50vh;
     align-items: center;
-}
-#contactMeButton {
-    text-align: center;
 }
 .btn, #hero, #aboutMe {
     font-size: 3.5rem;
@@ -65,11 +69,7 @@ li > a:hover:before {
 #aboutMe, #footer{
     background-color: #eeeeee;
 }
-#footer {
-    height: 10vh;
-    align-items: center;
-    justify-content: center;
-}
+
 html {
     font-size: 14px;
     font-family: 'Noto Serif', serif;
@@ -91,6 +91,13 @@ html {
     #heading {
         margin-top: 1em;
     }
+    .container {
+        max-width: 540px;
+    }
+    .content_text {
+        font-size: 1.6rem;
+        line-height: 1.4em;
+    }
 }
 @media (min-width: 577px) and (max-width: 769px) {
     html  {
@@ -108,4 +115,48 @@ html {
     #heading {
         margin-top: 1em;
     }
+    .container {
+        max-width: 720px;
+    }
+    .content_text {
+        font-size: 1.6rem;
+        line-height: 1.4em;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    .content_text {
+        font-size: 1.6rem;
+        line-height: 1.4em;
+    }
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.content_text {
+    font-size: 16px;
+    line-height: 1.8em;
+    text-align: center;
+    color: #454545;
+}
+.social_links {
+    font-size: 2.5em;
 }
