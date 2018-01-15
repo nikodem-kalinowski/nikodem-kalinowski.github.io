@@ -1,18 +1,21 @@
-#hero{
-    background: url("https://static.pexels.com/photos/34153/pexels-photo.jpg") center;
-    background-size: cover;
-    color: aliceblue;
-    font-family: 'Noto Serif', serif;
+.full_screen{
+    height: 100vh;
 }
-#myHero, #aboutMe{
+.half_screen {
+    height: 50vh;
+}
+#myProjects, .feature  {
     height:100vh;
+    color: aliceblue;
 }
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%;
+#myProjects, #contactMe {
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+}
+.hero {
+    height:50vh;
+    font-size: 1.7em;
 }
 
 p {
@@ -50,31 +53,23 @@ li > a:hover:before {
 .myText {
     flex-basis: auto;
 }
-#heading, #aboutMe, #contactMeButton, #myProjects, .project {
+#heading, #contactMeButton, #myProjects, .project {
     text-align: center;
 }
 #myNav {
     align-self: center;
     margin-left: 10%;
 }
-#myProjects, #contactMe {
-    color: black;
-    flex-wrap: wrap;
-    height: 100vh;
-    align-items: center;
-}
-.btn, #hero, #aboutMe {
+
+.btn, #aboutMe, #myProjects {
     font-size: 3.5rem;
-}
-#aboutMe, #contactMe{
-    background-color: #eeeeee;
 }
 #footer{
     background-color: #373737;
 }
 html {
-    font-size: 14px;
     font-family: 'Noto Serif', serif;
+    color: aliceblue;
 }
 @media (max-width: 576px) {
     html {
@@ -83,7 +78,7 @@ html {
     #myProjects{
         height: 100vh;
     }
-    #hero, #aboutMe, #contactMeButton, .btn{
+    #hero, #contactMeButton, .btn{
         font-size: 1.4rem;
     }
     #myNav{
@@ -107,7 +102,7 @@ html {
     #myProjects{
         height: 100vh;
     }
-    #hero, #aboutMe, #contactMeButton, .btn{
+    #hero, #contactMeButton, .btn{
         font-size: 2.4rem;
     }
     #myNav{
@@ -156,37 +151,39 @@ html {
     margin-right: -15px;
     margin-left: -15px;
 }
+
+.social_links {
+    font-size: 2.5em;
+}
 .content_text {
     font-size: 1.6rem;
     line-height: 1.8em;
     text-align: center;
-    color: #454545;
+    color: aliceblue;
 }
-.social_links {
-    font-size: 2.5em;
+.content_header{
+    margin-bottom: 20px ;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
+.icons {
+    font-size: 1.6em;
 }
-.overlay_text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+
+* {box-sizing:border-box}
+body, html {padding:0; margin:0}
+body {background:#232323; color:#fff}
+.opaque {position:absolute; top:0; left:0; right:0; bottom:0; opacity:0; background:#d2d6f1;}
+.lt-ie9 .opaque {display:none;}
+.feature {position:fixed; top:0; z-index:0; width:100%; padding-top:50%; background: url('../img/pexels-photo.jpg') center center no-repeat;
+    -webkit-background-size:250%;
+    -moz-background-size:250%;
+    -o-background-size:250%;
+    background-size:250%;
+    -webkit-box-shadow: 0 -50px 20px -20px #232323 inset;
+    -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
+    box-shadow: 0 -50px 20px -20px #232323 inset;
 }
-.container:hover .overlay {
-    opacity: 1;
+.content {position:relative; z-index:1; padding-top:45%; width:90%; margin:0 auto;}
+
+@media only screen and (min-width:36.250em) {
+    .content {width:60%; padding-top:35% }
 }
