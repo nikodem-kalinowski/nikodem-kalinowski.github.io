@@ -1,14 +1,13 @@
 body {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Open Sans', serif;
 }
-.full_screen, #myProjects, .feature, #contactMe{
+.full_screen, #myProjects, #contactMe{
     height: 100vh;
 }
-.half_screen, .hero {
+.half_screen {
     height: 50vh;
 }
-
-#myProjects, .feature, body, .content_text {
+#myProjects, .content_text {
     color: aliceblue;
 }
 #myProjects, #contactMe {
@@ -28,7 +27,7 @@ body {
     margin-left: 10%;
 }
 
-.btn, #aboutMe, #myProjects {
+.cta-button, #aboutMe, #myProjects {
     font-size: 3.5rem;
 }
 #footer{
@@ -46,6 +45,28 @@ body {
 .content_text {
     font-size: 1.6rem;
     line-height: 1.8em;
+    padding-bottom: 35px;
+}
+.content_text_company{
+    font-weight: 700;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+.content_text_company:after {
+    position: absolute;
+    content: '';
+    width: 55px;
+    bottom: -3px;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: aliceblue;
+}
+.education_container{
+    margin-bottom: 50px;
+}
+.education {
+    padding-bottom: 20px;
 }
 .content_header{
     margin-bottom: 20px ;
@@ -87,74 +108,72 @@ li > a:hover:before {
 }
 
 
-@media (max-width: 576px) {
-    html {
-        font-size: 16px;
-    }
-    #myProjects{
-        height: 100vh;
-    }
-    #hero, #contactMeButton, .btn{
-        font-size: 1.4rem;
-    }
-    #myNav{
-        margin-top: 3.5em;
-    }
-    #heading {
-        margin-top: 1em;
-    }
-    .container {
-        max-width: 540px;
-    }
-    .content_text {
-        font-size: 1rem;
-        line-height: 1.4em;
-    }
-}
-@media (min-width: 577px) and (max-width: 769px) {
-    html  {
-        font-size: 16px;
-    }
-    #myProjects{
-        height: 100vh;
-    }
-    #hero, #contactMeButton, .btn{
-        font-size: 2.4rem;
-    }
-    #myNav{
-        margin-top: 3.5em;
-    }
-    #heading {
-        margin-top: 1em;
-    }
-    .container {
-        max-width: 720px;
-    }
-    .content_text {
-        font-size: 1.0rem;
-        line-height: 1.4em;
-    }
-}
+/*@media (max-width: 576px) {*/
+    /*html {*/
+        /*font-size: 16px;*/
+    /*}*/
+    /*#myProjects{*/
+        /*height: 100vh;*/
+    /*}*/
+    /*#hero, #contactMeButton, .btn{*/
+        /*font-size: 1.4rem;*/
+    /*}*/
+    /*#myNav{*/
+        /*margin-top: 3.5em;*/
+    /*}*/
+    /*#heading {*/
+        /*margin-top: 1em;*/
+    /*}*/
+    /*.container {*/
+        /*max-width: 540px;*/
+    /*}*/
+    /*.content_text {*/
+        /*font-size: 1rem;*/
+        /*line-height: 1.4em;*/
+    /*}*/
+/*}*/
+/*@media (min-width: 577px) and (max-width: 769px) {*/
+    /*html  {*/
+        /*font-size: 16px;*/
+    /*}*/
+    /*#myProjects{*/
+        /*height: 100vh;*/
+    /*}*/
+    /*#hero, #contactMeButton, .btn{*/
+        /*font-size: 2.4rem;*/
+    /*}*/
+    /*#myNav{*/
+        /*margin-top: 3.5em;*/
+    /*}*/
+    /*#heading {*/
+        /*margin-top: 1em;*/
+    /*}*/
+    /*.container {*/
+        /*max-width: 720px;*/
+    /*}*/
+    /*.content_text {*/
+        /*font-size: 1.0rem;*/
+        /*line-height: 1.4em;*/
+    /*}*/
+/*}*/
 
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-    .content_text {
-        font-size: 1.2rem;
-        line-height: 1.0em;
-    }
-}
+/*@media (min-width: 992px) {*/
+    /*.container {*/
+        /*max-width: 960px;*/
+    /*}*/
+    /*.content_text {*/
+        /*font-size: 1.2rem;*/
+        /*line-height: 1.0em;*/
+    /*}*/
+/*}*/
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-    .content_text {
-        font-size: 1.4rem;
-        line-height: 1.4em;
-    }
-}
+/*@media (min-width: 1200px) {*/
+
+    /*.content_text {*/
+        /*font-size: 1.4rem;*/
+        /*line-height: 1.4em;*/
+    /*}*/
+/*}*/
 
 
 * {box-sizing:border-box}
@@ -181,4 +200,8 @@ body {background:#232323; color:#fff}
 
 @media only screen and (min-width:36.250em) {
     .content {width:60%; padding-top:35% }
+}
+
+.cta-button-hover {
+  cursor: pointer;
 }
