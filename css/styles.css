@@ -1,23 +1,58 @@
-.full_screen{
+body {
+    font-family: 'Noto Serif', serif;
+}
+.full_screen, #myProjects, .feature, #contactMe{
     height: 100vh;
 }
-.half_screen {
+.half_screen, .hero {
     height: 50vh;
 }
-#myProjects, .feature  {
-    height:100vh;
+
+#myProjects, .feature, body, .content_text {
     color: aliceblue;
 }
 #myProjects, #contactMe {
-    flex-wrap: wrap;
-    height: 100vh;
     align-items: center;
 }
 .hero {
-    height:50vh;
     font-size: 1.7em;
 }
+.myText {
+    flex-basis: auto;
+}
+#heading, #contactMeButton, #myProjects, .project, .content_text {
+    text-align: center;
+}
+#myNav {
+    align-self: center;
+    margin-left: 10%;
+}
 
+.btn, #aboutMe, #myProjects {
+    font-size: 3.5rem;
+}
+#footer{
+    background-color: #373737;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.social_links {
+    font-size: 2.5em;
+}
+.content_text {
+    font-size: 1.6rem;
+    line-height: 1.8em;
+}
+.content_header{
+    margin-bottom: 20px ;
+}
+.icons {
+    font-size: 1.6em;
+}
 p {
     margin-bottom: 0px;
 }
@@ -50,27 +85,8 @@ li > a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-.myText {
-    flex-basis: auto;
-}
-#heading, #contactMeButton, #myProjects, .project {
-    text-align: center;
-}
-#myNav {
-    align-self: center;
-    margin-left: 10%;
-}
 
-.btn, #aboutMe, #myProjects {
-    font-size: 3.5rem;
-}
-#footer{
-    background-color: #373737;
-}
-html {
-    font-family: 'Noto Serif', serif;
-    color: aliceblue;
-}
+
 @media (max-width: 576px) {
     html {
         font-size: 16px;
@@ -139,34 +155,7 @@ html {
         line-height: 1.4em;
     }
 }
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
 
-.social_links {
-    font-size: 2.5em;
-}
-.content_text {
-    font-size: 1.6rem;
-    line-height: 1.8em;
-    text-align: center;
-    color: aliceblue;
-}
-.content_header{
-    margin-bottom: 20px ;
-}
-.icons {
-    font-size: 1.6em;
-}
 
 * {box-sizing:border-box}
 body, html {padding:0; margin:0}
@@ -182,7 +171,13 @@ body {background:#232323; color:#fff}
     -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
     box-shadow: 0 -50px 20px -20px #232323 inset;
 }
-.content {position:relative; z-index:1; padding-top:45%; width:90%; margin:0 auto;}
+.content {
+    position:relative;
+    z-index:1;
+    padding-top:45%;
+    width:90%;
+    margin:0 auto;
+}
 
 @media only screen and (min-width:36.250em) {
     .content {width:60%; padding-top:35% }
