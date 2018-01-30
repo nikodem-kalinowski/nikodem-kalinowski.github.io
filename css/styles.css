@@ -1,26 +1,22 @@
 body {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Open Sans', serif;
 }
-.full_screen, #myProjects, .feature, #contactMe{
+.full_screen {
     height: 100vh;
 }
-.half_screen, .hero {
+.half_screen {
     height: 50vh;
 }
-
-#myProjects, .feature, body, .content_text {
+#myProjects, .content_text {
     color: aliceblue;
 }
-#myProjects, #contactMe {
+#myProjects, .cta-button {
     align-items: center;
 }
 .hero {
     font-size: 1.7em;
 }
-.myText {
-    flex-basis: auto;
-}
-#heading, #contactMeButton, #myProjects, .project, .content_text {
+#heading, #myProjects, .project, .content_text, .content_header{
     text-align: center;
 }
 #myNav {
@@ -28,7 +24,7 @@ body {
     margin-left: 10%;
 }
 
-.btn, #aboutMe, #myProjects {
+.cta-button, #aboutMe {
     font-size: 3.5rem;
 }
 #footer{
@@ -43,18 +39,31 @@ body {
 .social_links {
     font-size: 2.5em;
 }
+.section_skills{
+    margin-bottom: 15px;
+}
 .content_text {
     font-size: 1.6rem;
     line-height: 1.8em;
+    padding-bottom: 35px;
+}
+.content_text_company{
+    font-weight: 700;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+.education_container{
+    margin-bottom: 50px;
 }
 .content_header{
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 .icons {
-    font-size: 1.6em;
+    font-size: 3.4rem;
 }
 p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 li > a:hover,  li > a, ul.myNav > li {
@@ -88,71 +97,12 @@ li > a:hover:before {
 
 
 @media (max-width: 576px) {
-    html {
-        font-size: 16px;
-    }
-    #myProjects{
-        height: 100vh;
-    }
-    #hero, #contactMeButton, .btn{
-        font-size: 1.4rem;
-    }
-    #myNav{
-        margin-top: 3.5em;
-    }
-    #heading {
-        margin-top: 1em;
-    }
-    .container {
-        max-width: 540px;
-    }
-    .content_text {
-        font-size: 1rem;
-        line-height: 1.4em;
-    }
-}
-@media (min-width: 577px) and (max-width: 769px) {
-    html  {
-        font-size: 16px;
-    }
-    #myProjects{
-        height: 100vh;
-    }
-    #hero, #contactMeButton, .btn{
-        font-size: 2.4rem;
-    }
-    #myNav{
-        margin-top: 3.5em;
-    }
-    #heading {
-        margin-top: 1em;
-    }
-    .container {
-        max-width: 720px;
-    }
-    .content_text {
-        font-size: 1.0rem;
-        line-height: 1.4em;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
     .content_text {
         font-size: 1.2rem;
-        line-height: 1.0em;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-    .content_text {
-        font-size: 1.4rem;
         line-height: 1.4em;
+    }
+    .cta-button{
+        font-size: 2.4rem;
     }
 }
 
@@ -163,10 +113,10 @@ body {background:#232323; color:#fff}
 .opaque {position:absolute; top:0; left:0; right:0; bottom:0; opacity:0; background:#d2d6f1;}
 .lt-ie9 .opaque {display:none;}
 .feature {position:fixed; top:0; z-index:0; width:100%; padding-top:50%; background: url('../img/pexels-photo.jpg') center center no-repeat;
-    -webkit-background-size:250%;
-    -moz-background-size:250%;
-    -o-background-size:250%;
-    background-size:250%;
+    -webkit-background-size:200%;
+    -moz-background-size:200%;
+    -o-background-size:200%;
+    background-size:200%;
     -webkit-box-shadow: 0 -50px 20px -20px #232323 inset;
     -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
     box-shadow: 0 -50px 20px -20px #232323 inset;
@@ -181,4 +131,8 @@ body {background:#232323; color:#fff}
 
 @media only screen and (min-width:36.250em) {
     .content {width:60%; padding-top:35% }
+}
+
+.cta-button-hover {
+  cursor: pointer;
 }
