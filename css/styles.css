@@ -4,19 +4,13 @@ body {
 .full_screen {
     height: 100vh;
 }
-.half_screen {
-    height: 50vh;
-}
 #myProjects, .content_text {
     color: aliceblue;
 }
 #myProjects, .cta-button {
     align-items: center;
 }
-.hero {
-    font-size: 1.7em;
-}
-#heading, #myProjects, .project, .content_text, .content_header{
+#heading, #myProjects, .project, .content_text, .content_header, .social_icons{
     text-align: center;
 }
 #myNav {
@@ -94,17 +88,40 @@ li > a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+.half_screen{
+    height: 50vh;
+}
 
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .content_text {
         font-size: 1.2rem;
         line-height: 1.4em;
+        padding-bottom: 15px;
     }
-    .cta-button{
+
+    .cta-button {
         font-size: 2.4rem;
     }
+    .hero_text{
+        font-size: 24px;
+    }
+    .hero_section{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 75px;
+    }
+    .education_container{
+        margin-bottom: 35px;
+    }
+    .contact_section{
+        margin-top: 15px;
+    }
+    .content_header{
+        margin-bottom: 15px;
+    }
 }
+
 
 
 * {box-sizing:border-box}
@@ -135,4 +152,11 @@ body {background:#232323; color:#fff}
 
 .cta-button-hover {
   cursor: pointer;
+}
+.shadow {
+    text-shadow: #373737 0 0 20px;
+    font-weight: 700;
+}
+.social_icons{
+    font-size: 2.0rem;
 }
